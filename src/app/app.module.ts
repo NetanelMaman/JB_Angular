@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from './components/layout-area/layout.module';
 import { LayoutComponent } from './components/layout-area/layout/layout.component';
 import { GiftShopComponent } from './components/gift-shop-area/gift-shop.component';
+import { RandomSaleComponent } from './components/home-erea/random-sale/random-sale.component';
 
 @NgModule({
 
@@ -18,7 +19,8 @@ import { GiftShopComponent } from './components/gift-shop-area/gift-shop.compone
   declarations: [
 
   
-    GiftShopComponent
+    GiftShopComponent,
+        RandomSaleComponent
   ]
 })
 export class AppModule { }
