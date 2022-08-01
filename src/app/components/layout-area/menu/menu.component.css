@@ -5,6 +5,9 @@ div{
     margin-top: 20px;
 }
 
-p{
-    color: red;
+
+.active{
+color: green;
+font-weight: bold;
+font-family: Arial;
 }
