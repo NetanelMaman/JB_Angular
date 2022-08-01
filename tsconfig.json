@@ -21,7 +21,8 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "strictNullChecks": false //פותר בעיה של מחרוזת ריקה - מתעלם
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

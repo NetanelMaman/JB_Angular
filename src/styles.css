@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+html, body{
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    color: white; /* text color */
+    background-image: linear-gradient(45deg, rgb(0, 44, 138), rgb(64, 63, 63));
+}
+
+a{ 
+    color: white;
+}
+
+.box{
+    display: inline-block;
+    border: 1px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+
+}
