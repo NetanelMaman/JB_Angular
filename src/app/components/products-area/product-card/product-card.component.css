@@ -1,0 +1,20 @@
+.box {
+  width: 300px; 
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  background-image: linear-gradient(90deg, rgb(3, 0, 99), rgb(122, 152, 252)); 
+}
+
+img {
+width: 60px;
+height: 60px;
+border: 1px solid black;
+border-radius: 10px;
+vertical-align: middle;
+
+}
+
+div>div:last-child{
+    margin-left: auto
+}

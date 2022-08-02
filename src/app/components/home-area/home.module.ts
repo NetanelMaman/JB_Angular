@@ -13,8 +13,6 @@ import { DiscountComponent } from './discount/discount.component';
 import { SalesComponent } from './sales/sales.component';
 import { PipesModule } from 'src/app/pipes/pipes.module';
 import { DirectivesModule } from 'src/app/directives/directives.module';
-import { RandomSaleComponent } from './random-sale/random-sale.component';
-
 
 
 @NgModule({
@@ -29,7 +27,6 @@ import { RandomSaleComponent } from './random-sale/random-sale.component';
     GiftCardComponent,
     DiscountComponent,
     SalesComponent,
-    RandomSaleComponent
   ],
   imports: [
     CommonModule,

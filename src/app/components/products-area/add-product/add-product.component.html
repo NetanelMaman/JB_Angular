@@ -1,0 +1,31 @@
+<div class = "box">
+  <form (ngSubmit)="send()" #productForm="ngForm">
+    <h2>Add Product</h2>
+    <label>Name</label>
+    <input type="text" name="name" [(ngModel)]="product.name"  required minlength="3" maxlength="100" #nameControl="ngModel">
+    <span *ngIf="nameControl.errors?. ['required'] && nameControl.touched">Missing Name</span>
+    <span *ngIf="nameControl.errors?. ['minlength'] && nameControl.touched">Name too short</span>
+    <span *ngIf="nameControl.errors?. ['maxlength'] && nameControl.touched">Maxi Name</span>
+
+<!-- <hr>
+{{nameControl.errors | json}}
+<hr> -->
+
+
+    <label>Price</label>
+    <input type="number" name="price" [(ngModel)]="product.price"  required min="0" max="1000" #priceControl="ngModel"/>
+    <span *ngIf="priceControl.errors?. ['required'] && priceControl.touched">Missing Price</span>
+    <span *ngIf="priceControl.errors?. ['min'] && priceControl.touched">Minimum Price is 1000</span>
+    <span *ngIf="priceControl.errors?. ['max'] && priceControl.touched">Maximum Price</span>
+
+
+
+    <label>Stock</label>
+    <input type="number" name="stock" [(ngModel)]="product.stock" />
+
+<label>Image:</label>
+<input type= "file" accept="image/*" #imageControl>
+
+    <button [disabled]="productForm.invalid">Add</button>
+  </form>
+</div>
