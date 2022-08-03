@@ -3,4 +3,19 @@
   <h3>Price: {{ product.price | currency }}</h3>
   <h3>Stock: {{ product.stock }}</h3>
   <img [src]="imageSource" >
+
+
+<br><br>
+<a routerLink="/Products">Back</a>
+<span> | </span>
+<a routerLink="/Products/edit/{{ product.id }}">Edit</a>
+
+
+<span> | </span>
+
+<a href="javascript:void(0)" (click)="deleteProduct()">Delete</a>
+
+
+
+  
 </div>
