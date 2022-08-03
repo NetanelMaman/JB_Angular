@@ -8,6 +8,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { SharedModule } from '../shared-area/shared.module';
+import { TotalProductsComponent } from './total-products/total-products.component';
 
 
 
@@ -17,7 +18,8 @@ import { SharedModule } from '../shared-area/shared.module';
     ProductDetailsComponent,
     ProductCardComponent,
     AddProductComponent,
-    EditProductComponent
+    EditProductComponent,
+    TotalProductsComponent
   ],
   imports: [
     CommonModule,
@@ -25,6 +27,9 @@ import { SharedModule } from '../shared-area/shared.module';
     FormsModule,
     ReactiveFormsModule,
     SharedModule
+  ],
+  exports: [
+    TotalProductsComponent
   ]
 })
 export class ProductsModule { }

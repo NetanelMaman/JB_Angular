@@ -8,6 +8,7 @@ import { HomeModule } from '../home-area/home.module';
 import { AboutModule } from '../about-area/about.module';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductsModule } from '../products-area/products.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FooterComponent,
     PageNotFoundComponent,
   ],
-  imports: [CommonModule, HomeModule, AboutModule, AppRoutingModule],
+  imports: [CommonModule, HomeModule, AboutModule, AppRoutingModule, ProductsModule],
 })
 export class LayoutModule {}
