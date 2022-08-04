@@ -4,6 +4,7 @@ import { ProductsService } from 'src/app/services/products/products.service';
 import { environment } from 'src/environments/environment';
 // import { ProductsModule } from '../products.module';
 import { ProductModel } from 'src/app/models/product.model';
+import { authStore } from 'src/app/redux/auth-state';
 
 @Component({
   selector: 'app-product-details',
@@ -13,6 +14,8 @@ import { ProductModel } from 'src/app/models/product.model';
 export class ProductDetailsComponent implements OnInit {
   public product: ProductModel;
   public imageSource: string;
+public isLoggedIn: boolean;
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private productsService: ProductsService,
@@ -25,6 +28,7 @@ export class ProductDetailsComponent implements OnInit {
       this.product = await this.productsService.getOneProduct(id);
       this.imageSource =
         environment.productsUrl + 'images/' + this.product.imageName;
+        this.isLoggedIn = authStore.getState().token !== null;
       // console.log(id);
       // console.log(typeof id);
     } catch (err: any) {

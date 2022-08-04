@@ -13,7 +13,7 @@
 
 <span> | </span>
 
-<a href="javascript:void(0)" (click)="deleteProduct()">Delete</a>
+<a *ngIf="isLoggedIn" href="javascript:void(0)" (click)="deleteProduct()">Delete</a>
 
 
 
